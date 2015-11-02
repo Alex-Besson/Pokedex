@@ -10,7 +10,28 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
+    @IBOutlet weak var imgMain: UIImageView!
+    
+    @IBOutlet weak var lblDescription: UILabel!
+    
+    @IBOutlet weak var lblType: UILabel!
+    @IBOutlet weak var lblDefense: UILabel!
+    @IBOutlet weak var lblHeight: UILabel!
+    @IBOutlet weak var lblWeight: UILabel!
+    @IBOutlet weak var lblPokedexID: UILabel!
+    @IBOutlet weak var lblBaseAttack: UILabel!
+    
+    @IBOutlet weak var lblNextEvolution: UILabel!
+    
+    @IBOutlet weak var imgFirstEvolution: UIImageView!
+    @IBOutlet weak var imgSecondEvolution: UIImageView!
+    
     var pokemon : Pokemon!
+    
+    
+    @IBAction func backButtonPressed(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
