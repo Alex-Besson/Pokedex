@@ -50,7 +50,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ZJS-DZ-p4Q">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PokeCell" id="ZJS-DZ-p4Q" customClass="PokemonCell" customModule="Pokedex" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -87,8 +87,16 @@
                                             <constraint firstItem="fIw-x9-uaL" firstAttribute="leading" secondItem="ZJS-DZ-p4Q" secondAttribute="leading" id="PRQ-Ya-mnj"/>
                                             <constraint firstAttribute="trailing" secondItem="Pyc-b0-QDa" secondAttribute="trailing" id="iXb-PT-LTr"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="imgThumbnail" destination="Pyc-b0-QDa" id="OVx-l5-rR4"/>
+                                            <outlet property="lblName" destination="fIw-x9-uaL" id="Jhv-mL-j4s"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="vh2-fy-uyi"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="I1R-PS-359"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <animations/>
