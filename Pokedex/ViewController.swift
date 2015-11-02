@@ -11,10 +11,31 @@ import UIKit
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
 //    @IBOutlet weak var collection: UICollectionView!
+    
+    var pokemon = [Pokemon]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        parsePokemonCSV()
+    }
+    
+    func parsePokemonCSV() {
+        let path = NSBundle.mainBundle().pathForResource("pokemon", ofType: "csv")!
+        
+        do {
+            let csv = try CSV(contentsOfURL: path)
+            let rows = csv.rows
+            
+            for row in rows {
+                let pokeID = Int(row["id"]!)!
+                let name = row["identifier"]!
+                let poke = Pokemon(name: name, pokedexID: pokeID)
+                pokemon.append(poke)
+            }
+        } catch let err as NSError {
+            print(err.debugDescription)
+        }
     }
     
     func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
@@ -29,9 +50,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         if let cell = collectionView.dequeueReusableCellWithReuseIdentifier("PokeCell", forIndexPath: indexPath) as? PokemonCell {
             
-            let pokemon = Pokemon(name: "Test", pokedexID: indexPath.row + 1)
+            let poke = pokemon[indexPath.row]
             
-            cell.configureCell(pokemon)
+            cell.configureCell(poke)
             
             return cell
         } else {
