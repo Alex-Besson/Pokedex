@@ -18,6 +18,8 @@
 		FA59925B1BE7090D006881DD /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA59925A1BE7090D006881DD /* Pokemon.swift */; };
 		FA5992621BE71370006881DD /* PokemonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5992611BE71370006881DD /* PokemonCell.swift */; };
 		FA5992641BE726B8006881DD /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5992631BE726B8006881DD /* csv.swift */; };
+		FA5992691BE72E5C006881DD /* PokemonSolidFont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FA5992681BE72E5C006881DD /* PokemonSolidFont.ttf */; };
+		FA59926B1BE7320C006881DD /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA59926A1BE7320C006881DD /* music.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		FA59925A1BE7090D006881DD /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		FA5992611BE71370006881DD /* PokemonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonCell.swift; sourceTree = "<group>"; };
 		FA5992631BE726B8006881DD /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
+		FA5992681BE72E5C006881DD /* PokemonSolidFont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PokemonSolidFont.ttf; sourceTree = "<group>"; };
+		FA59926A1BE7320C006881DD /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,7 +176,9 @@
 		FA5992671BE72740006881DD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FA5992681BE72E5C006881DD /* PokemonSolidFont.ttf */,
 				FA5992571BE70741006881DD /* pokemon.csv */,
+				FA59926A1BE7320C006881DD /* music.mp3 */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -283,7 +289,9 @@
 			files = (
 				FA5992341BE70449006881DD /* LaunchScreen.storyboard in Resources */,
 				FA5992311BE70449006881DD /* Assets.xcassets in Resources */,
+				FA59926B1BE7320C006881DD /* music.mp3 in Resources */,
 				FA5992581BE70741006881DD /* pokemon.csv in Resources */,
+				FA5992691BE72E5C006881DD /* PokemonSolidFont.ttf in Resources */,
 				FA59922F1BE70449006881DD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
