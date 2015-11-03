@@ -37,7 +37,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        lblName.text = pokemon.name
+        lblName.text = pokemon.name.capitalizedString
         
         let img = UIImage(named: "\(pokemon.pokedexID)")
         imgMain.image = img
