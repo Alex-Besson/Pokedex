@@ -10,8 +10,9 @@ import UIKit
 
 class DetailViewController: UIViewController {
     
-    @IBOutlet weak var imgMain: UIImageView!
+    @IBOutlet weak var lblName: UILabel!
     
+    @IBOutlet weak var imgMain: UIImageView!
     @IBOutlet weak var lblDescription: UILabel!
     
     @IBOutlet weak var lblType: UILabel!
@@ -36,7 +37,12 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        lblName.text = pokemon.name
+        imgMain.image = UIImage(named: "\(pokemon.pokedexID)")
         
+        pokemon.downloadPokemonDetails { () -> () in
+            // will be called when download is done
+        }
     }
 
     override func didReceiveMemoryWarning() {

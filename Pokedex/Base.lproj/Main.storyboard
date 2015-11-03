@@ -367,6 +367,7 @@
                         <outlet property="lblDefense" destination="yXd-1F-LZJ" id="VW0-Zy-KBD"/>
                         <outlet property="lblDescription" destination="GLk-3m-wcr" id="OwD-xQ-mUI"/>
                         <outlet property="lblHeight" destination="4PC-gr-dam" id="1qX-1G-6kx"/>
+                        <outlet property="lblName" destination="dLQ-6n-spK" id="8Nm-dB-dQb"/>
                         <outlet property="lblNextEvolution" destination="OiD-8p-2bd" id="U9B-t5-NFe"/>
                         <outlet property="lblPokedexID" destination="SkS-rj-M2K" id="0YG-aZ-Ecz"/>
                         <outlet property="lblType" destination="cUG-rD-5PS" id="dM0-8T-W1g"/>

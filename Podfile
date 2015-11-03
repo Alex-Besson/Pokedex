@@ -4,7 +4,7 @@
 use_frameworks!
 
 target 'Pokedex' do
-pod 'Alamofire', '~>3.0'
+pod 'Alamofire', '~>2.0'
 
 end
 
